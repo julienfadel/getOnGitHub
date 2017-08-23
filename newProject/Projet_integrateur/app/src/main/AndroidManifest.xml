@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.echecs.projet_integrateur">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/noir_roi"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:permission=""
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".pkgActivites.Menu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+	<activity
+            android:name=".pkgActivites.MenuAPropos"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.echecs.projet_integrateur.OPTIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pkgActivites.ListFichiers"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.echecs.projet_integrateur.JEU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pkgActivites.Revision"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.echecs.projet_integrateur.JEU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pkgActivites.Jeu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.echecs.projet_integrateur.JEU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pkgActivites.Preferences"
+            android:label="@string/pref_titre"
+            android:screenOrientation="portrait"
+            android:theme="@style/themePreferences"></activity>
+        <activity
+            android:name=".pkgActivites.OptionsNouvellePartie"
+            android:label="@string/optionsNouvellePartie_titre"
+            android:screenOrientation="portrait"
+            android:theme="@style/themeOptionsNouvellePartie">
+            <intent-filter>
+                <action android:name="com.echecs.projet_integrateur.OPTIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pkgActivites.JeuBluetooth"
+            android:label="@string/connexionBluetooth_titre"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.echecs.projet_integrateur.CONNEXION_BLUETOOTH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

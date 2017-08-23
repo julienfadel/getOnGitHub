@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:background="@color/background"
+        android:text="Mode de jeu :"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffffff" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/background"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_humains"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/background"
+            android:checked="true"
+            android:enabled="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="Entre humains"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_ordinateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/background"
+            android:checked="false"
+            android:enabled="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="Contre l&apos;ordinateur"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_humains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.50"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/checkBox_temps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:checked="true"
+            android:onClick="onCheckBoxClicked"
+            android:text="Temps :"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/background"
+            android:columnCount="2"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:rowCount="2"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@color/background"
+                android:enabled="true"
+                android:paddingBottom="20dp"
+                android:text="Blancs : "
+                android:textColor="#ffffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_tempsBlancs"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@color/background"
+                android:enabled="true"
+                android:inputType="number"
+                android:text="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@color/background"
+                android:enabled="true"
+                android:paddingBottom="20dp"
+                android:text="Noirs : "
+                android:textColor="#ffffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_tempsNoirs"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@color/background"
+                android:enabled="true"
+                android:inputType="number"
+                android:text="10" />
+        </GridLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:checked="false"
+            android:onClick="onCheckBoxClicked"
+            android:text="Bluetooth"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_ordinateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.30"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:text="Choisissez votre couleur :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffffff" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_ordi_blancs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:checked="false"
+                android:text="Blancs"
+                android:textColor="#ffffffff"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_ordi_noirs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:text="Noirs"
+                android:textColor="#ffffffff"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_ordi_aleatoire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:checked="true"
+                android:text="Aléatoire"
+                android:textColor="#ffffffff"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Difficulté : 0"
+            android:id="@+id/textView_ordi_difficulte"
+            android:textColor="#ffffffff"
+            android:background="@color/background" />
+
+        <SeekBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_ordi_difficulte"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:max="5"
+            android:background="@color/background"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_commencerPartie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Commencer la partie" />
+</LinearLayout>

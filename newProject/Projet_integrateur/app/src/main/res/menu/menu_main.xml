@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_preferences"
+        android:orderInCategory="100"
+        android:title="Préférences"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nouvelle_partie"
+        android:title="Nouvelle partie"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu"
+        android:title="Menu"
+        app:showAsAction="never" />
+</menu>

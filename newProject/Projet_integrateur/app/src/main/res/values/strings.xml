@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Échecs BdeB</string>
+    <string name="pref_echecs_humain_titre">Échecs entre humains</string>
+    <string name="pref_echecs_bot">Échecs contre l\'ordinateur</string>
+    <string name="pref_tournerJeu_titre">Tourner le jeu</string>
+    <string name="pref_tournerJeu_description">Détermine le mode de rotation de l\'échiquier après chaque tour</string>
+    <string name="pref_tournerJeu_defaut">0</string>
+    <string name="pref_tempsBlancs_titre">Temps blancs par défaut</string>
+    <string name="pref_tempsBlancs_defaut">10</string>
+    <string name="pref_tempsNoirs_titre">Temps noirs par défaut</string>
+    <string name="pref_tempsNoirs_defaut">10</string>
+    <string name="pref_titre">Préférences</string>
+    <string name="optionsNouvellePartie_titre">Nouvelle partie</string>
+    <string name="pref_affichage">Affichage</string>
+    <string name="afficher_case">Cases à afficher</string>
+    <string name="Afficher_dernier_coup">Afficher le dernier coup</string>
+    <string name="connexionBluetooth_titre">Connexion Bluetooth</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_affichage">
+        <ListPreference
+            android:defaultValue="@string/pref_tournerJeu_defaut"
+            android:entries="@array/tournerJeu_options"
+            android:entryValues="@array/tournerJeu_valeurs"
+            android:key="pref_tournerJeu"
+            android:persistent="true"
+            android:summary="@string/pref_tournerJeu_description"
+            android:title="@string/pref_tournerJeu_titre"/>
+
+    </PreferenceCategory>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_dernierCoup"
+        android:summary="@string/Afficher_dernier_coup"
+        android:title="Dernier coup" />
+    />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_afficherCoupsPossibles"
+        android:summary="Afficher les coups possibles"
+        android:title="Coups possibles" />
+    />
+</PreferenceScreen>

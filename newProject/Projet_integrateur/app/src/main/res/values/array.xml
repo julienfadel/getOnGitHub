@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tournerJeu_options">
+        <item>Ne pas tourner</item>
+        <item>Tourner seulement les cases</item>
+        <item>Tourner le jeu au complet</item>
+    </string-array>
+
+    <string-array name="tournerJeu_valeurs">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

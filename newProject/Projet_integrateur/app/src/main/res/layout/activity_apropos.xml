@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/linearApropos"
+    android:background="@color/background">
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ce projet a été réalisé dans le cadre du cours de programmation, 420-204-RE , du Collège Bois-de-Boulogne  par : "
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:textSize="23dp"
+        android:layout_weight="0.29"
+        android:textColor="#ffffffff"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="23dp"
+        android:layout_height="wrap_content"
+        android:text="-Jérémie Turcotte (1321314)"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.13"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:text="-Julien Fadel (1265154)"
+        android:id="@+id/textView9"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.13"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Simon St-Amant (1342480)"
+        android:textSize="23dp"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.13"
+        android:textColor="#ffffffff" />
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="169dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/noir_roi" />
+
+</LinearLayout>
